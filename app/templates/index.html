@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Hi, {{user}}!</h1>
+{% if user != 'Guest'%}
+<p>Your battles = {{battles}}</p>
+<p>Your wins = {{wins}}</p>
+<p>Your winrate = {% if battles == 0%}0{%else%}{{wins/(battles-wins)}}{%endif%}</p>
+<p><a href="/logout">Log out</a></p>
+<p><a href="/delete_account">Delete account</a></p>
+{% endif %}
+{% endblock %}
