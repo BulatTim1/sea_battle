@@ -6,7 +6,5 @@ MAIL_USE_TLS = True
 MAIL_USE_SSL = False
 MAIL_USERNAME = 'seabattlebot@gmail.com'
 MAIL_DEFAULT_SENDER = 'Sea battle Bot'
-MAIL_PASSWORD = 'gfhibdtw'
 
 SESSION_PERMANENT = True
-ADMINS = ['timurshin79@gmail.com']
